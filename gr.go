@@ -19,4 +19,6 @@ func main() {
 		a <- i
 		fmt.Println(<-b)
 	}
+	close(a)
+	close(b)
 }
